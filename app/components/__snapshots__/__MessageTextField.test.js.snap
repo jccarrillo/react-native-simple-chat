@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<TextInput
+  allowFontScaling={true}
+  onChangeText={[Function]}
+  onSubmitEditing={[Function]}
+  placeholder="Message"
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "borderColor": "#f5f5f5",
+      "borderRadius": 20,
+      "borderWidth": 1,
+      "height": 35,
+      "paddingLeft": 10,
+      "textAlign": "left",
+    }
+  }
+  value={null}
+/>
+`;

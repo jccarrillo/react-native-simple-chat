@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "borderRadius": 12,
+        "borderWidth": 0,
+        "marginBottom": 5,
+        "maxWidth": 200,
+        "overflow": "hidden",
+        "padding": 8,
+        "textAlign": "left",
+      },
+      Object {
+        "backgroundColor": "rgb(0, 122, 255)",
+        "color": "white",
+      },
+    ]
+  }
+>
+  hello
+</Text>
+`;
