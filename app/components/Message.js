@@ -5,14 +5,13 @@ class Message extends React.Component {
 
     constructor(props) {
         super(props);
-        this.text = this.props.text.trim();
     }
 
     render() {
         return (
             <Text
                 style={ [styles.message, this.props.align === 'left' ? styles.messageLeft : styles.messageRight] }>
-                { this.text }
+                { this.props.text.trim() }
             </Text>
         );
     }
