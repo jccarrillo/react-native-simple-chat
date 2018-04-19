@@ -5,7 +5,6 @@ class MessageTextField extends React.Component {
 
     constructor(props) {
         super(props);
-        this.onSubmit = this.props.onSubmit;
         this.state = { value: null };
     }
 
@@ -16,7 +15,7 @@ class MessageTextField extends React.Component {
                 value={ this.state.value }
                 style={ styles.textInput }
                 onChangeText={ (text) => this.setState({ value: text }) }
-                onSubmitEditing={ (event) => this.onSubmit(event.nativeEvent.text, () => this.setState({ value: null })) }/>
+                onSubmitEditing={ (event) => this.props.onSubmit(event.nativeEvent.text, () => this.setState({ value: null })) }/>
         );
     }
 }
