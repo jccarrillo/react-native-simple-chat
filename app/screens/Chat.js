@@ -75,7 +75,9 @@ const styles = StyleSheet.create({
     },
     footer: { // height: 35 + 35 = 70
         position: 'absolute',
-        backgroundColor: "#fafafa",
+        borderTopWidth: .5,
+        borderTopColor: '#888888',
+        backgroundColor: "#F9F9F9",
         // top: height - 90 - 70,
         bottom: 1,
         paddingTop: 10,
