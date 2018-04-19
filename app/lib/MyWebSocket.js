@@ -10,6 +10,7 @@ class MyWebSocket {
 
     init() {
         this._ws.onopen = () => {
+            this.receiveMessage('What\'s Up?');
         };
         this._ws.onmessage = (e) => {
             if (!(e.data instanceof ArrayBuffer) && !(/^\d+$/).test(e.data)) {
@@ -18,10 +19,11 @@ class MyWebSocket {
             }
         };
         this._ws.onerror = (e) => {
-            console.log(e.message);
+            this.receiveMessage('@#$%%!!');
         };
         this._ws.onclose = (e) => {
             console.log(e.code, e.reason);
+            this.receiveMessage('Later!');
         };
     };
 
